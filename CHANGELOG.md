@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-03-24c]
+
+### Added
+- Standalone privacy policy page (`privacy.html`) with full detail
+- Privacy policy link in homepage footer
+
 ## [2026-03-24b]
 
 ### Changed

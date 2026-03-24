@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy &mdash; Bhajan Book</title>
+  <meta name="description" content="Privacy policy for the Bhajan Book app. We do not collect, store, or share any user data.">
+  <meta name="theme-color" content="#E8621A" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1A0F08" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <style>
+    /* ── Palette synced with bhajan-app/src/theme/colors.ts ── */
+    :root {
+      --primary: #E8621A;
+      --primary-light: #F4903E;
+      --bg: #FFF8F0;
+      --surface: #FFFFFF;
+      --text: #1C1008;
+      --text-secondary: #6B4C2A;
+      --border: #EAD4B5;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #F4903E;
+        --primary-light: #E8621A;
+        --bg: #1A0F08;
+        --surface: #2D1E10;
+        --text: #FFF8F0;
+        --text-secondary: #C4956A;
+        --border: #4A3020;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Header ── */
+    .page-header {
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-header a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .page-header a:hover { text-decoration: underline; }
+
+    /* ── Content ── */
+    .content {
+      padding: 48px 0;
+    }
+    .content h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .content .effective-date {
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+    }
+    .content h2 {
+      font-size: 1.25rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    .content p, .content li {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .content ul {
+      padding-left: 24px;
+    }
+    a { color: var(--primary); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      .content h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="page-header">
+    <a href="/">&larr; Bhajan Book</a>
+  </div>
+
+  <div class="content">
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective date: 24 March 2026</p>
+
+    <p>Bhajan Book is a free, offline-first app for reading Gujarati bhajans. We respect your privacy and have designed the app so that it does not collect, store, or share any personal data.</p>
+
+    <h2>No Data Collection</h2>
+    <p>The app does not collect any information about you. There are no accounts, no login, no user profiles, and no analytics or tracking of any kind. We do not use Firebase, Google Analytics, Amplitude, or any similar service.</p>
+
+    <h2>On-Device Storage</h2>
+    <p>All your data &mdash; playlists, preferences, and settings &mdash; is stored locally on your device using SQLite and AsyncStorage. This data never leaves your device and is not accessible to us or any third party.</p>
+
+    <h2>Network Activity</h2>
+    <p>The app makes only two types of network requests:</p>
+    <ul>
+      <li><strong>Catalog sync</strong> &mdash; The app periodically downloads a public SQLite file from a GitHub repository to check for new or updated bhajans. This is a standard HTTPS download. No user data is sent in the request.</li>
+      <li><strong>Error reports and suggestions</strong> &mdash; When you choose to submit an error report or bhajan suggestion using the in-app forms, the text you write is sent via EmailJS. Only the freeform text you typed and the bhajan number for context are included. No device identifiers, location, or other personal information is attached.</li>
+    </ul>
+
+    <h2>No Advertising</h2>
+    <p>The app does not display advertisements. No ad networks or ad-related tracking are present in the app.</p>
+
+    <h2>No Third-Party Data Sharing</h2>
+    <p>We do not share any data with third parties because we do not collect any data to share.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>The app interacts with two external services, both in limited and transparent ways:</p>
+    <ul>
+      <li><strong>GitHub</strong> &mdash; Catalog updates are downloaded from a public GitHub repository. No user data is transmitted. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+      <li><strong>EmailJS</strong> &mdash; Used only when you explicitly submit an error report or suggestion. See the <a href="https://www.emailjs.com/legal/privacy-policy/">EmailJS Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>The app is suitable for all ages. Because we do not collect any data from any user, there are no special concerns regarding children's privacy.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we make changes to this privacy policy, the updated version will be posted on this page with a revised effective date.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please email <strong>bhajanbookapp@gmail.com</strong>.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Bhajan Book
+  </div>
+</footer>
+
+</body>
+</html>
