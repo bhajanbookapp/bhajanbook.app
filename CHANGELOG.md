@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026-03-24d]
+
+### Changed
+- Removed inline privacy and support sections from homepage to avoid duplication
+- Homepage is now a clean landing page (hero + features + footer)
+- Consistent footer navigation (Privacy + Support links) across all pages
+
+### Added
+- Standalone support page (`support.html`) with error reporting, suggestion, and contact info
+
 ## [2026-03-24c]
 
 ### Added

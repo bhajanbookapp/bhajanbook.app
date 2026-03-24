@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support &mdash; Bhajan Book</title>
+  <meta name="description" content="Get help with the Bhajan Book app. Report errors, suggest bhajans, or contact us.">
+  <meta name="theme-color" content="#E8621A" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1A0F08" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <style>
+    /* ── Palette synced with bhajan-app/src/theme/colors.ts ── */
+    :root {
+      --primary: #E8621A;
+      --primary-light: #F4903E;
+      --bg: #FFF8F0;
+      --surface: #FFFFFF;
+      --text: #1C1008;
+      --text-secondary: #6B4C2A;
+      --border: #EAD4B5;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #F4903E;
+        --primary-light: #E8621A;
+        --bg: #1A0F08;
+        --surface: #2D1E10;
+        --text: #FFF8F0;
+        --text-secondary: #C4956A;
+        --border: #4A3020;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Header ── */
+    .page-header {
+      padding: 32px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-header a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .page-header a:hover { text-decoration: underline; }
+
+    /* ── Content ── */
+    .content {
+      padding: 48px 0;
+    }
+    .content h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .content h2 {
+      font-size: 1.25rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    .content p, .content li {
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .content ul {
+      padding-left: 24px;
+    }
+    a { color: var(--primary); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      .content h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="page-header">
+    <a href="/">&larr; Bhajan Book</a>
+  </div>
+
+  <div class="content">
+    <h1>Support</h1>
+
+    <h2>Report an Error</h2>
+    <p>Found a mistake in the lyrics, transliteration, or translation? Use the <strong>Report Error</strong> button on any bhajan page in the app. This sends us a message with the bhajan details so we can fix it quickly.</p>
+
+    <h2>Suggest a Bhajan</h2>
+    <p>Know a bhajan that should be in the collection? Use the <strong>Suggest Bhajan</strong> button in the app's Settings tab. Tell us the name and any details you have &mdash; we review every suggestion.</p>
+
+    <h2>Contact Us</h2>
+    <p>For anything else, email us at <strong>bhajanbookapp@gmail.com</strong>.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Bhajan Book &middot; <a href="/privacy.html" style="color: var(--text-secondary);">Privacy</a> &middot; <a href="/support.html" style="color: var(--text-secondary);">Support</a>
+  </div>
+</footer>
+
+</body>
+</html>
