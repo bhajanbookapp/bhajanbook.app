@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open in Bhajan Book</title>
+  <meta name="description" content="Open this bhajan in the Bhajan Book app — 175+ Gujarati bhajans with transliteration and translation.">
+  <meta name="theme-color" content="#E8621A" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1A0F08" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+
+  <!-- Open Graph for rich link previews -->
+  <meta property="og:title" content="Bhajan Book">
+  <meta property="og:description" content="175+ Gujarati bhajans with transliteration, translation, and pronunciation guide.">
+  <meta property="og:image" content="https://bhajanbook.app/icon-192.png">
+  <meta property="og:url" content="https://bhajanbook.app">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary: #E8621A;
+      --primary-light: #F4903E;
+      --bg: #FFF8F0;
+      --surface: #FFFFFF;
+      --text: #1C1008;
+      --text-secondary: #6B4C2A;
+      --border: #EAD4B5;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #F4903E;
+        --primary-light: #E8621A;
+        --bg: #1A0F08;
+        --surface: #2D1E10;
+        --text: #FFF8F0;
+        --text-secondary: #C4956A;
+        --border: #4A3020;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .container { max-width: 480px; margin: 0 auto; padding: 0 24px; width: 100%; }
+
+    .hero {
+      text-align: center;
+      padding: 80px 0 32px;
+      flex: 1;
+    }
+    .hero-logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .hero .subtitle {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 36px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      transition: opacity 0.2s;
+      margin-bottom: 12px;
+    }
+    .btn:hover { opacity: 0.85; }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .platform-section {
+      margin-top: 8px;
+    }
+    .coming-soon {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 16px;
+    }
+    .coming-soon p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .coming-soon .label {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .info-text {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--text-secondary); }
+
+    @media (max-width: 600px) {
+      .hero { padding: 48px 0 24px; }
+      .hero h1 { font-size: 1.5rem; }
+      .hero-logo { width: 72px; height: 72px; border-radius: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="hero">
+    <img src="/icon-192.png" alt="Bhajan Book" class="hero-logo">
+    <h1>Bhajan Book</h1>
+    <p class="subtitle">175+ Gujarati bhajans with transliteration, translation, and pronunciation guide</p>
+
+    <div class="platform-section">
+      <!-- Android: shown by default, hidden on iOS -->
+      <div id="android-section">
+        <a id="open-app-btn" href="#" class="btn btn-primary">Open in App</a>
+        <a href="https://play.google.com/store/apps/details?id=app.bhajanbook" class="btn btn-secondary">Get it on Google Play</a>
+      </div>
+
+      <!-- iOS: hidden by default, shown on iOS -->
+      <div id="ios-section" style="display: none;">
+        <div class="coming-soon">
+          <p class="label">Coming soon to the App Store</p>
+          <p>Bhajan Book for iOS is on its way. Check back soon!</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=app.bhajanbook" class="btn btn-secondary" style="margin-top: 16px;">Available now on Android</a>
+      </div>
+
+      <!-- Desktop: hidden by default -->
+      <div id="desktop-section" style="display: none;">
+        <a href="https://play.google.com/store/apps/details?id=app.bhajanbook" class="btn btn-primary">Download on Google Play</a>
+        <div class="coming-soon">
+          <p class="label">Coming soon to the App Store</p>
+          <p>Check back soon for iOS.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="info-text">Bhajan Book is a free app for Android.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Bhajan Book &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/support.html">Support</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPhone|iPad|iPod/i.test(ua);
+  var isAndroid = /Android/i.test(ua);
+  var isMobile = isIOS || isAndroid;
+
+  var androidEl = document.getElementById('android-section');
+  var iosEl = document.getElementById('ios-section');
+  var desktopEl = document.getElementById('desktop-section');
+
+  // Show the right section
+  if (isIOS) {
+    androidEl.style.display = 'none';
+    iosEl.style.display = 'block';
+    desktopEl.style.display = 'none';
+  } else if (isAndroid) {
+    androidEl.style.display = 'block';
+    iosEl.style.display = 'none';
+    desktopEl.style.display = 'none';
+  } else {
+    androidEl.style.display = 'none';
+    iosEl.style.display = 'none';
+    desktopEl.style.display = 'block';
+  }
+
+  // Build the deep link from the current URL path
+  var path = window.location.pathname;
+  var search = window.location.search;
+  var deepLink = 'bhajan-book:/' + path + search;
+
+  // Set the "Open in App" button for Android
+  var openBtn = document.getElementById('open-app-btn');
+  if (openBtn && isAndroid) {
+    // Try intent:// for Android — opens app if installed, falls back to Play Store
+    var intentUrl = 'intent:/' + path + search +
+      '#Intent;scheme=bhajan-book;package=app.bhajanbook;' +
+      'S.browser_fallback_url=https://play.google.com/store/apps/details?id=app.bhajanbook;end';
+    openBtn.href = intentUrl;
+  } else if (openBtn) {
+    openBtn.href = deepLink;
+  }
+})();
+</script>
+
+</body>
+</html>
